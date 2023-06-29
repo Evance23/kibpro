@@ -1,7 +1,13 @@
+import { Component } from "react";
 import "./NavbarStyles.css";
 
 
-function Navbar(){
+class Navbar extends Component {
+    state = { clicked: false};
+    handleClick = () => [
+        this.setState({clicked: !this.state.clicked})
+    ]
+    render (){
     return(
         <>
        <nav>
@@ -10,17 +16,27 @@ function Navbar(){
         </a>
         <div>
             <ul id='navbar'>
-              <li><a href="index.html">Home</a></li>
+              <li><a className="active" href="index.html">Home</a></li>
               <li><a href="index.html">Solutions</a></li> 
               <li><a href="index.html">Careers</a></li> 
               <li><a href="index.html">Contacts</a></li> 
-              <li><a href="index.html">About</a></li>  
+              <li><a href="index.html">About</a></li>
+              <li><a href="index.html">About</a></li>   
             </ul>
 
+        </div>
+        <div id="mobile" onClick={this.handleClick}>
+            <i id="bar"
+            className=
+            {this.state.clicked ? 
+            "fas fas-times" : "fas fas-bars"}>
+
+            </i>
+           
         </div>
        </nav>
         </>
     )
 }
-
+}
 export default Navbar
