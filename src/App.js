@@ -11,8 +11,8 @@ const App = ( ) => {
      <Hero
      cName="hero"
      heroImg="https://www.wallpaperflare.com/technics-computer-technology-internet-design-3d-web-digital-wallpaper-ovzi"/>
-     title="Agile Solutions"
-     text='We address you problems thorugh definite solutions'
+     title=""
+     text='We address you problems through definite solutions'
     </div>
   );
 }
