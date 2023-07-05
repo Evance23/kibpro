@@ -8,7 +8,14 @@ const App = ( ) => {
     <div className="App">
       <h1> Kibetech </h1>
      <Navbar/>
-     <Hero/>
+     <Hero
+     cName='hero'
+     heroImg='https://wallpapersafari.com/4k-tech-wallpaper/'
+     title='Tech Solutions'
+     text='We address you problems through definite solutions'
+     
+     
+     />
     </div>
   );
 }
