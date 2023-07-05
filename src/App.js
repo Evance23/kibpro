@@ -13,6 +13,9 @@ const App = ( ) => {
      heroImg='https://wallpapersafari.com/4k-tech-wallpaper/'
      title='Tech Solutions'
      text='We address you problems through definite solutions'
+     buttonText='Learn More'
+     url='/'
+     btnClass='show'
      
      
      />
