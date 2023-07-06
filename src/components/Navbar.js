@@ -19,7 +19,7 @@ class Navbar extends Component {
               <li><a className="active" href="index.html">Home</a></li>
               <li><a href="index.html">Solutions</a></li> 
               <li><a href="index.html">Careers</a></li> 
-              <li><a href="index.html">Contacts</a></li> 
+              <li><a href="/src/pages/Contact/Contact.js">Contacts</a></li> 
               <li><a href="index.html">About</a></li>
               <li><a href="index.html">About</a></li>   
             </ul>
