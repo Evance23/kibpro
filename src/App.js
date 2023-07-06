@@ -1,25 +1,28 @@
 import "./App.css";
-import Navbar from "./components/Navbar.js";
-import Hero from "./components/Hero.js";
+// import Navbar from "./components/Navbar.js";
+// import Hero from "./components/Hero.js";
 import Contacts from "./routes/Contacts";
+import Home from "./routes/Home";
+import About from "./routes/About"
+import Solutions from './routes/Solutions'
+
+import { Route, Routes} from "react-router-dom";
 
 
-const App = () => {
+function App(){
   return (
-    <div className="App">
-      <h1> Kibetech </h1>
-      <Navbar />
-      <Hero
-        // cName="hero"
-        // heroImg="https://pngtree.com/freebackground/electronic-technology-website-texture-background-banner_1065222.html"
-        // title="Tech Solutions"
-        // text="We address you problems through definite solutions"
-        // buttonText="Learn More"
-        // url="/"
-        // btnClass="show"
-      />
-    </div>
+    <>
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/about" element={<About/>}/>
+      <Route path="solutions" element={<Solutions/>}/>
+      <Route path="Contacts" element={<Contacts/>}/>
+    </Routes>
+    
+    
+  </>
+   
   );
-};
+}
 
 export default App;
