@@ -7,11 +7,12 @@ import About from "./routes/About"
 import Solutions from './routes/Solutions'
 
 import { Route, Routes} from "react-router-dom";
-
+// import { BrowserRouter } from 'react-router-dom'; 
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App(){
   return (
-    <>
+    <Router>
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/about" element={<About/>}/>
@@ -20,7 +21,7 @@ function App(){
     </Routes>
     
     
-  </>
+  </Router>
    
   );
 }
