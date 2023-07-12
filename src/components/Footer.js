@@ -45,7 +45,7 @@ const Footer = () => {
               size={20}
               style={{ color: "#088F8F", marginRight: "2rem" }}
             />
-            <div>
+            <div> 
               <p>Kibetech</p>
               <p>Nairobi</p>
             </div>
