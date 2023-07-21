@@ -6,12 +6,20 @@ import Home from "./routes/Home";
 import About from "./routes/About"
 import Solutions from './routes/Solutions'
 
-import { Route, Routes} from "react-router-dom";
+import { Link, Route, Routes} from "react-router-dom";
 // import { BrowserRouter } from 'react-router-dom'; 
 import { BrowserRouter as Router } from "react-router-dom";
 
 function App(){
   return (
+    <div className="container">
+      <nav>
+        <ul>
+<Link to ="/" class="list">
+  Home
+</Link>
+        </ul>
+      </nav>
     <Router>
     <Routes>
       <Route path="/" element={<Home/>}/>
@@ -22,6 +30,7 @@ function App(){
     
     
   </Router>
+  </div>
    
   );
 }
