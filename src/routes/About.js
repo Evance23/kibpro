@@ -10,6 +10,7 @@ const About = () => {
       <Navbar/>
       <Hero/>
       <Footer/>
+
     </div>
     </div>
   )
