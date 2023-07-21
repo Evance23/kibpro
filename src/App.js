@@ -5,7 +5,7 @@ import Contacts from "./routes/Contacts";
 import Home from "./routes/Home";
 import About from "./routes/About"
 import Solutions from './routes/Solutions'
-
+import Careers from "./routes/Careers";
 import { Link, Route, Routes} from "react-router-dom";
 // import { BrowserRouter } from 'react-router-dom'; 
 // import { BrowserRouter as Router } from "react-router-dom";
@@ -28,7 +28,7 @@ function App(){
 <Link to ="/routes/Contacts.js" class="list">
   Contacts
 </Link>
-<Link to ="/routes/Contacts.js" class="list">
+<Link to ="/routes/Careers.js" class="list">
   Careers
 </Link>
         </ul>
@@ -37,8 +37,9 @@ function App(){
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/About" element={<About/>}/>
-      <Route path="/solutions" element={<Solutions/>}/>
+      <Route path="/Solutions" element={<Solutions/>}/>
       <Route path="Contacts" element={<Contacts/>}/>
+      <Route path="Careers" element={<Careers/>}/>
     </Routes>
     
     
