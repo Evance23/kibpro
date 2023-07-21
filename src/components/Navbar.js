@@ -17,8 +17,8 @@ class Navbar extends Component {
         <div>
             <ul id='navbar'>
               <li><a className="active" href="index.html">Home</a></li>
-              <li><a href="index.html">Solutions</a></li> 
-              <li><a href="index.html">Careers</a></li> 
+              <li><a href="/src/routes/Solutions.js">Solutions</a></li> 
+              <li><a href="/src/routes/Careers.js">Careers</a></li> 
               <li><a href="/src/pages/Contact/Contact.js">Contacts</a></li> 
               <li><a href="/src/routes/About.js">About</a></li>
               <li><a href="index.html">About</a></li>   

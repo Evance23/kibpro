@@ -22,11 +22,14 @@ function App(){
 <Link to ="/routes/About" class="list">
   About
 </Link>
-<Link to ="/src/routes/Solutions.js" class="list">
+<Link to ="/routes/Solutions.js" class="list">
   Soutions 
 </Link>
-<Link to ="/src/routes/Contacts.js" class="list">
+<Link to ="/routes/Contacts.js" class="list">
   Contacts
+</Link>
+<Link to ="/routes/Contacts.js" class="list">
+  Careers
 </Link>
         </ul>
       </nav>
